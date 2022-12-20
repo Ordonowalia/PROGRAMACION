@@ -47,6 +47,15 @@ public void setDefensa(int defensa) {
 public String toString() {
 	return "Robot->nombre=" + nombre + ", lifePoints=" + lifePoints + ", ataque=" + ataque + ", defensa=" + defensa;
 }
+public Robot(String nombre) {
+
+	this.nombre = nombre;
+	this.lifePoints = 100;
+	this.ataque = (int)(Math.random()*20);
+	this.defensa = (int)(Math.random()*100);
+}
+
+
 
 
 
